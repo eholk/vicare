@@ -2,7 +2,7 @@
 #
 # Run this in the top source directory to rebuild the infrastructure.
 
-LIBTOOLIZE=${LIBTOOLIZE:=libtoolize}
+LIBTOOLIZE=${LIBTOOLIZE:=`which libtoolize || which glibtoolize`}
 
 set -xe
 test -d autotools		|| mkdir autotools
